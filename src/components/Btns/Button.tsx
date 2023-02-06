@@ -1,8 +1,8 @@
 export function Button() {
     return (
         <button className="
-        w-[296px] h-[50px] bg-gr-100 font-sora font-bold text-[16px] rounded-[5px] 
-        hover:bg-transparent hover:border-gr-100 hover:border-[3px] hover:text-white duration-500"
+        w-[296px] h-[50px] sm:w-[534px] sm:h-[62px] bg-gr-100 font-sora font-bold text-[16px] sm:text-[24px] rounded-[5px] 
+        hover:border-black hover:border-[3px] duration-500"
         >
             GARANTIR EBOOK
         </button>
