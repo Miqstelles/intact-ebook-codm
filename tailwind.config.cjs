@@ -30,6 +30,9 @@ module.exports = {
       },
       animation: {
         'fade-in-down': 'fade-in-down .5s ease-out'
+      },
+      screens: {
+        'lg': '1250px'
       }
     },
   },

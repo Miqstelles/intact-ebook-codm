@@ -11,8 +11,8 @@ export function Navbar(props: NavbarProps) {
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <nav className="sm:flex items-center justify-center w-full h-full sm:w-[1200px]">
-            <div className="flex justify-between items-center mb-[50px] mx-[48px] sm:mb-0 sm:mx-0 sm:mr-[48px]">
+        <nav className="sm:flex items-center justify-center w-[328px] h-full sm:w-[1200px]">
+            <div className="flex justify-between items-center sm:mr-[48px]">
                 <div className="w-[50px] h-[50px] bg-slate-50"> </div>
                 <button
                     className="
@@ -23,7 +23,7 @@ export function Navbar(props: NavbarProps) {
                     <Sling size={50} />
                 </button>
             </div>
-            <div className={"h-full bg-transparent animate-fade-in-down duration-[1.5s] rounded-lg"} >
+            <div className={"h-full bg-transparent animate-fade-in-down duration-[1.5s] rounded-lg my-[48px]"} >
                 <div
                     className={
                         "sm:flex flex justify-center items-center border-white border-[4px] rounded-[5px] sm:border-none" +

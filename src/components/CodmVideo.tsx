@@ -1,16 +1,38 @@
 import { CaretLeft, CaretRight, Play } from 'phosphor-react'
+import React, { useState, useEffect } from 'react'
 import codm from '../assets/codm.jpg'
 
 export function CodmVideo() {
+    const [screenSize, getDimension] = useState({
+        dynamicWidth: window.innerWidth,
+    });
+
+    const setDimension = () => {
+        getDimension({
+            dynamicWidth: window.innerWidth
+        })
+    }
+
+    useEffect(() => {
+        addEventListener('resize', setDimension);
+
+        return (() => {
+            removeEventListener('resize', setDimension);
+        })
+    })
+
+    let iconSize = screenSize.dynamicWidth <= 762 ? 32 : 86
+
     return (
-        <div className="w-[328px] h-[215px]">
+
+        <div className="w-[328px] h-[215px] md:w-[800px] lg:w-[870px] md:h-[546px]">
             <div className="flex items-center justify-center">
-                <div className="mt-[28px] mb-[56px]">
-                    <div className="absolute ml-[14px]"><CaretLeft size="32px" color="#fff" /></div>
-                    <div className="absolute ml-[160px]"><Play weight='fill' size="32px" color="#fff" /></div>
-                    <div className="absolute ml-[280px]"><CaretRight size="32px" color="#fff" /></div>
+                <div className="absolute flex gap-[105px] md:gap-[210px]">
+                    <CaretLeft size={iconSize} color="#fff" weight='thin' />
+                    <Play weight='fill' size={iconSize} color="#fff" />
+                    <CaretRight size={iconSize} color="#fff" weight='thin' />
                 </div>
-                <img src={codm} className="w-[328px] h-[215px] rounded-[5px] border-prp-300 border-[4px]" />
+                <img src={codm} className="w-[328px] h-[215px] md:w-[800px] lg:w-[870px] md:h-[546px] rounded-[5px] border-prp-300 border-[4px]" />
             </div>
         </div>
     )
