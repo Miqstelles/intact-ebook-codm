@@ -23,7 +23,7 @@ export function ButtonFooter() {
 export function ButtonHeader() {
     return (
         <button className="
-        w-[328px] h-[62px] bg-transparent text-[#B0B0B0] font-sora font-bold text-[20px] rounded-[5px] border-gr-100 border-[3px] duration-500
+        w-[328px] h-[62px] md:w-[225px] bg-transparent text-[#B0B0B0] font-sora font-bold text-[20px] rounded-[5px] border-gr-100 border-[3px] duration-500
         hover:text-white"
         >
             GARANTIR EBOOK

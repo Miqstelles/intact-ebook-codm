@@ -3,7 +3,7 @@ import { Button, ButtonFooter } from "../Btns/Button";
 
 export function AdSquare() {
     return (
-        <div className="w-[328px] h-[758px] md:w-[800px] md:h-[543px] lg:w-[1268px] lg:h-[713px] flex items-center justify-center bg-prp-200 border-prp-300 border-[4px]">
+        <div className="w-[328px] h-[758px] md:w-[770px] md:h-[543px] lg:w-[1268px] lg:h-[713px] flex items-center justify-center bg-prp-200 border-prp-300 border-[4px]">
             <div className="w-[280px] h-[656px] md:w-[700px] md:h-[448px] lg:w-[1140px] lg:h-[448px] text-center">
                 <div className="md:flex md:space-x-[20px] lg:space-x-[180px]">
                     <div className="md:w-[344px] md:h-[448px] lg:w-[554px]">

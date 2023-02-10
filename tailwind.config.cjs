@@ -32,7 +32,8 @@ module.exports = {
         'fade-in-down': 'fade-in-down .5s ease-out'
       },
       screens: {
-        'lg': '1250px'
+        'md': '800px',
+        'lg': '1200px'
       }
     },
   },

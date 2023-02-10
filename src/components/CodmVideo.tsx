@@ -25,7 +25,7 @@ export function CodmVideo() {
 
     return (
 
-        <div className="w-[328px] h-[215px] md:w-[800px] lg:w-[870px] md:h-[546px]">
+        <div className="w-[328px] h-[215px] md:w-[770px] lg:w-[870px] md:h-[546px]">
             <div className="flex items-center justify-center">
                 <div className="absolute flex gap-[105px] md:gap-[210px]">
                     <CaretLeft size={iconSize} color="#fff" weight='thin' />
