@@ -7,6 +7,7 @@ import { AdSquareWt } from "./components/Squares/AdSquareWt"
 import { CreatorSquare } from "./components/Squares/CreatorSquare"
 import { RatingSquare } from "./components/Squares/RatingSquare"
 import { Square } from "./components/Squares/Square"
+import { motion } from "framer-motion"
 
 function App() {
   return (
@@ -22,16 +23,22 @@ function App() {
             <ButtonHeader />
           </div>
 
-          <div className="lg:flex grid justify-center items-center md:mt-[126px]">
+
+          <motion.div
+            initial={{ opacity: 0, y: -70 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+            className="lg:flex grid justify-center items-center md:mt-[126px]"
+          >
             <div className="w-[328px] h-[144px] md:w-[563px] md:h-[435px] lg:w-[663px] lg:h-[335px] mt-[40px] mb-[37px] space-y-[20px] ">
               <h1 className="text-white font-bold text-[20px] md:text-[48px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
               <h2 className="text-[#BFBFBF] font-bold text-[16px] md:text-[40px]">Lorem Ipsum is simply dummy text of the printing.</h2>
             </div>
 
             <AdSquareWt />
-          </div>
+          </motion.div>
 
-          <div className="md:flex items-center justify-center space-y-[56px] md:space-x-[52px] sm:space-y-0 lg:space-x-[56px] lg:space-y-0 mt-[50px] md:mt-[212px]">
+          <motion.div
+            initial={{ opacity: 0, y: -70 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+            className="md:flex items-center justify-center space-y-[56px] md:space-x-[52px] sm:space-y-0 lg:space-x-[56px] lg:space-y-0 mt-[50px] md:mt-[212px]">
             <div className="lg:flex lg:space-x-[56px] md:space-y-[50px] space-y-[56px] lg:space-y-0">
               <Square
                 title="Lorem Ipsum"
@@ -59,7 +66,7 @@ function App() {
                 icon={props => <CaretDoubleUp />}
               />
             </div>
-          </div>
+          </motion.div>
 
           <div className="mt-[50px] md:mt-[96px] md:flex items-center justify-center">
             <CreatorSquare
@@ -70,7 +77,9 @@ function App() {
           </div>
 
 
-          <div className="md:flex items-center justify-center mt-[50px] md:mt-[158px]">
+          <motion.div
+            initial={{ opacity: 0, y: -70 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+            className="md:flex items-center justify-center mt-[50px] md:mt-[158px]">
             <div className="md:flex">
               <div className="space-y-[48px]">
                 <p className="text-white text-[24px] font-sora font-bold">O que você ira <span className="text-[#A4FC96]">aprender</span></p>
@@ -92,7 +101,7 @@ function App() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <div className="mt-[50px] mb-[50px] md:mt-[158px] space-y-[34px] md:flex items-center justify-center">
             <div>
@@ -108,13 +117,13 @@ function App() {
               <div className="hidden lg:grid space-y-[48px]">
                 <div className="flex space-x-[46px]">
                   <RatingSquare
-                    info="“Estava meio perdido mas depois desse ebook sinto que posso me classificar  para um mundial.”"
-                    user="Dermec"
+                    info="“Muito bom, já sou melhor que  o mihawk agora.”"
+                    user="Gregzin"
                   />
 
                   <RatingSquare
-                    info="“Estava meio perdido mas depois desse ebook sinto que posso me classificar  para um mundial.”"
-                    user="Dermec"
+                    info="“Material riquissimo e de alta qualidade, só conteudo bom e direto ao ponto!”"
+                    user="Jhon"
                   />
                 </div>
 
@@ -125,8 +134,8 @@ function App() {
                   />
 
                   <RatingSquare
-                    info="“Estava meio perdido mas depois desse ebook sinto que posso me classificar  para um mundial.”"
-                    user="Dermec"
+                    info="“Ótima didática, fácil de compreender. Ótimo para quem busca um direcionamento.”"
+                    user="Lucas"
                   />
                 </div>
               </div>
@@ -138,9 +147,11 @@ function App() {
             </div>
           </div>
 
-          <div className="md:flex items-center justify-center md:mt-[102px]">
+          <motion.div
+            initial={{ opacity: 0, y: -70 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+            className="md:flex items-center justify-center md:mt-[102px]">
             <AdSquare />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="w-full h-[50px] bg-black"></div>

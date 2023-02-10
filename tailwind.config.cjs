@@ -20,16 +20,18 @@ module.exports = {
         'fade-in-down': {
           '0%': {
             opacity: '0',
-            transform: 'translateY(-10px)'
+            transform: 'translateY(-40px)',
+            transition: 'opacity 1s'
           },
           '100%': {
             opacity: '1',
-            transform: 'translateY(0)'
+            transform: 'translateY(0)',
+            transition: 'opacity 1s'
           },
         }
       },
       animation: {
-        'fade-in-down': 'fade-in-down .5s ease-out'
+        'fade-in-down': 'fade-in-down 1.5s ease-out'
       },
       screens: {
         'md': '800px',

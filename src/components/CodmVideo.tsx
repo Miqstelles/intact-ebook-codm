@@ -1,6 +1,8 @@
 import { CaretLeft, CaretRight, Play } from 'phosphor-react'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import codm from '../assets/codm.jpg'
+import { motion } from "framer-motion"
+
 
 export function CodmVideo() {
     const [screenSize, getDimension] = useState({
@@ -24,8 +26,8 @@ export function CodmVideo() {
     let iconSize = screenSize.dynamicWidth <= 762 ? 32 : 86
 
     return (
-
-        <div className="w-[328px] h-[215px] md:w-[770px] lg:w-[870px] md:h-[546px]">
+        <div
+            className="w-[328px] h-[215px] md:w-[770px] lg:w-[870px] md:h-[546px]">
             <div className="flex items-center justify-center">
                 <div className="absolute flex gap-[105px] md:gap-[210px]">
                     <CaretLeft size={iconSize} color="#fff" weight='thin' />
